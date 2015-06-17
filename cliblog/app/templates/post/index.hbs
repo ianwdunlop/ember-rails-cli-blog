@@ -1,0 +1,7 @@
+<p>Title: {{model.title}}</p>
+<ul>
+{{#each model.comments as |comment|}}
+<li>{{#link-to 'post.comment' comment}}{{comment.text}}{{/link-to}}</li>
+{{/each}}
+</ul>
+{{#link-to 'post.comments.new'}}New comment{{/link-to}}
