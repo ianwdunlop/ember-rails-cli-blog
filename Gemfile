@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.11'
+gem 'rails', '4.2.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -33,3 +33,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 gem "ember-cli-rails"
+
+group :development do
+  gem 'web-console', '~> 2.0'
+end
