@@ -2,7 +2,7 @@ EmberBlog::Application.routes.draw do
   root :to => 'application#index'
   resources :posts
   resources :comments
-  match ':posts/:id/:comments/:comment_id' => 'comments#show'
+  get ':posts/:id/:comments/:comment_id' => 'comments#show'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
